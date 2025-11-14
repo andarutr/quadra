@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#000000">
+    <title>Daftar | Quadra Property Syariah</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="32x32">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/quadra_07.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="manifest" href="__manifest.json">
+</head>
+
+<body>
+    <div id="loader">
+        <img src="assets/img/quadra_01.png" width="50" alt="icon">
+    </div>
+
+    <div class="appHeader no-border transparent position-absolute">
+        <div class="left">
+            <a href="index.html" class="headerButton goBack">
+                <ion-icon name="chevron-back-outline"></ion-icon>
+            </a>
+        </div>
+        <div class="pageTitle"></div>
+        <div class="right">
+            <a href="login.html" class="headerButton">
+                Login
+            </a>
+        </div>
+    </div>
+
+    <div id="appCapsule">
+
+        <div class="section mt-2 text-center">
+            <img src="assets/img/quadra_02.png" width="150" alt="icon">
+            
+        </div>
+        <div class="section mb-5 p-2">
+            <form action="index.html">
+                <div class="card">
+                    <div class="card-body">
+                        <center>
+                            <h3>Daftar</h3>
+                            <h4>Daftarkan Akun Anda.</h4>
+                        </center>
+                        <div class="form-group basic">
+                            <div class="input-wrapper">
+                                <label class="label" for="email1">E-mail</label>
+                                <input type="email" class="form-control" id="email1" placeholder="Your e-mail">
+                                <i class="clear-input">
+                                    <ion-icon name="close-circle"></ion-icon>
+                                </i>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group basic">
+                            <div class="input-wrapper">
+                                <label class="label" for="name">Nama Lengkap</label>
+                                <input type="text" class="form-control" id="name" placeholder="Masukkan Nama Lengkap">
+                                <i class="clear-input">
+                                    <ion-icon name="close-circle"></ion-icon>
+                                </i>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group basic">
+                            <div class="input-wrapper">
+                                <label class="label" for="email">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Masukkan Email">
+                                <i class="clear-input">
+                                    <ion-icon name="close-circle"></ion-icon>
+                                </i>
+                            </div>
+                        </div>
+
+                        <div class="form-group basic">
+                            <div class="input-wrapper">
+                                <label class="label" for="password">Password</label>
+                                <input type="password" class="form-control" id="password" autocomplete="off"
+                                    placeholder="Your password">
+                                <i class="clear-input">
+                                    <ion-icon name="close-circle"></ion-icon>
+                                </i>
+                            </div>
+                        </div>
+
+                        <div class="form-group basic">
+                            <div class="input-wrapper">
+                                <label class="label" for="confirm_password">Konfirmasi Password</label>
+                                <input type="password" class="form-control" id="confirm_password" autocomplete="off"
+                                    placeholder="Type password again">
+                                <i class="clear-input">
+                                    <ion-icon name="close-circle"></ion-icon>
+                                </i>
+                            </div>
+                        </div>
+
+                        <div class="custom-control custom-checkbox mt-2 mb-1">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="customCheckb1">
+                                <label class="form-check-label" for="customCheckb1">
+                                    Saya setuju <a href="#" data-bs-toggle="modal" data-bs-target="#termsModal">Ketentuan dan Syarat</a>
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="form-button-group transparent">
+                    <button type="submit" class="btn btn-primary btn-block btn-lg">Register</button>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+    <!-- * App Capsule -->
+
+
+    <!-- Terms Modal -->
+    <div class="modal fade modalbox" id="termsModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Ketentuan dan Syarat</h5>
+                    <a href="#" data-bs-dismiss="modal">Close</a>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Dengan mendaftar dan menggunakan layanan ini, Anda setuju untuk terikat dan mematuhi ketentuan dan 
+                        syarat berikut ini. Harap baca dengan seksama sebelum melanjutkan proses pendaftaran.
+                    </p>
+
+                    <h6>1. Informasi Akun</h6>
+                    <ul>
+                        <li>Anda wajib memberikan informasi yang akurat, valid, dan terkini saat mendaftar.</li>
+                        <li>Anda bertanggung jawab penuh atas kerahasiaan informasi akun Anda.</li>
+                        <li>Dilarang menggunakan akun orang lain tanpa izin.</li>
+                    </ul>
+
+                    <h6>2. Transaksi Syariah</h6>
+                    <ul>
+                        <li>Semua transaksi yang dilakukan di platform ini mengikuti prinsip-prinsip syariah Islam.</li>
+                        <li>Dilarang keras melakukan transaksi yang mengandung unsur riba, gharar, atau penipuan.</li>
+                        <li>Kami tidak bertanggung jawab atas pelanggaran prinsip syariah yang dilakukan oleh pengguna secara pribadi.</li>
+                    </ul>
+
+                    <h6>3. Properti dan Listing</h6>
+                    <ul>
+                        <li>Informasi properti yang disediakan adalah seakurat mungkin berdasarkan data dari pihak terpercaya.</li>
+                        <li>Kami tidak menjamin keaslian atau legalitas sertifikat, namun akan berusaha semaksimal mungkin untuk memverifikasi.</li>
+                        <li>Setiap kesepakatan transaksi dilakukan secara langsung antara pembeli dan penjual.</li>
+                    </ul>
+
+                    <h6>4. Privasi dan Data</h6>
+                    <ul>
+                        <li>Data pribadi yang Anda berikan akan kami jaga kerahasiaannya dan tidak akan dibagikan kepada pihak ketiga tanpa izin Anda.</li>
+                        <li>Data hanya digunakan untuk keperluan verifikasi, transaksi, dan layanan pelanggan.</li>
+                    </ul>
+
+                    <h6>5. Penolakan dan Pembatalan</h6>
+                    <ul>
+                        <li>Kami berhak menolak atau membatalkan akun yang tidak sesuai dengan aturan atau prinsip syariah.</li>
+                        <li>Kami berhak mengubah atau menghentikan layanan sewaktu-waktu dengan pemberitahuan terlebih dahulu.</li>
+                    </ul>
+
+                    <p>
+                        Dengan menyetujui ketentuan ini, Anda menyatakan bahwa Anda telah membaca, memahami, dan menyetujui 
+                        semua isi di atas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/lib/bootstrap.bundle.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="assets/js/plugins/splide/splide.min.js"></script>
+    <script src="assets/js/base.js"></script>
+</body>
+</html>
