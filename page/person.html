@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#000000">
+    <title>Home | Quadra Property Syariah</title>
+    <link rel="icon" type="image/png" href="/assets/img/quadra_07.png" sizes="32x32">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/quadra_07.png">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="manifest" href="__manifest.json">
+</head>
+
+<body>
+	<div id="loader">
+        <img src="/assets/img/quadra_01.png" width="50" alt="icon">
+    </div>
+
+    <div class="appHeader">
+        <div class="left">
+            <a href="#" class="headerButton goBack">
+                <ion-icon name="call"></ion-icon>
+            </a>
+        </div>
+        <div class="pageTitle">
+            Quadra Property Syariah
+        </div>
+        <div class="right">
+            <a href="#" class="headerButton toggle-searchbox">
+                <ion-icon name="search-outline"></ion-icon>
+            </a>
+        </div>
+    </div>
+    <!-- * App Header -->
+
+    <!-- Search Component -->
+    <div id="search" class="appHeader">
+        <form class="search-form">
+            <div class="form-group searchbox">
+                <input type="text" class="form-control" placeholder="Search...">
+                <i class="input-icon icon ion-ios-search"></i>
+                <a href="#" class="ms-1 close toggle-searchbox"><i class="icon ion-ios-close-circle"></i></a>
+            </div>
+        </form>
+    </div>
+
+    <div id="appCapsule">
+        <div class="listview-title mt-1">Theme</div>
+        <ul class="listview image-listview text inset no-line">
+            <li>
+                <div class="item">
+                    <div class="in">
+                        <div>
+                            Dark Mode
+                        </div>
+                        <div class="form-check form-switch  ms-2">
+                            <input class="form-check-input dark-mode-switch" type="checkbox" id="darkmodeSwitch">
+                            <label class="form-check-label" for="darkmodeSwitch"></label>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <div class="listview-title mt-1">Profile Settings</div>
+        <ul class="listview image-listview text inset">
+            <li>
+                <a href="#" class="item">
+                    <div class="in">
+                        <div>Change Username</div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="item">
+                    <div class="in">
+                        <div>Update E-mail</div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="item">
+                    <div class="in">
+                        <div>Change Password</div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="appBottomMenu">
+        <a href="/page/home.html" class="item">
+            <div class="col">
+                <ion-icon name="home"></ion-icon>
+                <strong>Home</strong>
+            </div>
+        </a>
+        <a href="/page/property/category.html" class="item">
+            <div class="col">
+                <ion-icon name="list"></ion-icon>
+                <strong>Category</strong>
+            </div>
+        </a>
+        <a href="/page/person.html" class="item">
+            <div class="col">
+                <ion-icon name="person"></ion-icon>
+                <strong>Account</strong>
+            </div>
+        </a>
+    </div>
+
+    <!-- ========= JS Files =========  -->
+    <script src="/assets/js/lib/bootstrap.bundle.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="/assets/js/plugins/splide/splide.min.js"></script>
+    <script src="/assets/js/base.js"></script>
+</body>
+</html>
