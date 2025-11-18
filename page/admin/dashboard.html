@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#000000">
+    <title>Home | Quadra Property Syariah</title>
+    <link rel="icon" type="image/png" href="/assets/img/quadra_07.png" sizes="32x32">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/quadra_07.png">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="manifest" href="__manifest.json">
+</head>
+
+<body>
+	<div id="loader">
+        <img src="/assets/img/quadra_01.png" width="50" alt="icon">
+    </div>
+
+    <div class="appHeader">
+        <div class="left">
+            <a href="#" class="headerButton goBack">
+                <ion-icon name="call"></ion-icon>
+            </a>
+        </div>
+        <div class="pageTitle">
+            Quadra Property Syariah
+        </div>
+        <div class="right">
+            <a href="#" class="headerButton toggle-searchbox">
+                <ion-icon name="search-outline"></ion-icon>
+            </a>
+        </div>
+    </div>
+
+    <div id="search" class="appHeader">
+        <form class="search-form">
+            <div class="form-group searchbox">
+                <input type="text" class="form-control" placeholder="Search...">
+                <i class="input-icon icon ion-ios-search"></i>
+                <a href="#" class="ms-1 close toggle-searchbox"><i class="icon ion-ios-close-circle"></i></a>
+            </div>
+        </form>
+    </div>
+
+    <div id="appCapsule">
+        <div class="section full gradientSection">
+            <div class="in">
+                <h5 class="title mb-2">Selamat Datang</h5>
+                <h1 class="total">Admin</h1>
+                <h4 class="caption">
+                    11 Nov 2025, 08:32
+                </h4>
+            </div>
+        </div>
+
+        <div class="section-heading padding mt-4">
+            <h2 class="title">Pengunjung</h2>
+        </div>
+        <!-- carousel  -->
+        <div class="card">
+            <div class="card-body">
+                <div class="chart chart-sparkline-success-1"></div>
+            </div>
+        </div>
+
+        <!-- News -->
+        <div class="section full mt-4 mb-3">
+            <div class="section-heading padding">
+                <h2 class="title">Postingan Baru</h2>
+            </div>
+
+            <!-- carousel multiple -->
+            <div class="carousel-multiple splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <a href="/page/property/detail.html">
+                                <div class="blog-card">
+                                    <img src="/assets/img/property/juanda_depok_2_lantai.png" alt="image" class="imaged w-100">
+                                    <div class="text">
+                                        <h4 class="title">Rumah 2 Lantai Siap Huni</h4>
+                                        <p>Juanda - Depok</p>
+                                        <p class="badge bg-primary">Rp 350.000.000</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- * carousel multiple -->
+
+        </div>
+        <!-- * News -->
+
+
+        <!-- app footer -->
+        <div class="appFooter">
+            <div class="footer-title">
+                Copyright © Quadra 2025. All Rights Reserved.
+            </div>
+        </div>
+        <!-- * app footer -->
+
+    </div>
+
+    <div class="appBottomMenu">
+        <a href="/page/admin/dashboard.html" class="item">
+            <div class="col">
+                <ion-icon name="home"></ion-icon>
+                <strong>Dashboard</strong>
+            </div>
+        </a>
+        <a href="/page/admin/property/index.html" class="item">
+            <div class="col">
+                <ion-icon name="list"></ion-icon>
+                <strong>Property</strong>
+            </div>
+        </a>
+        <a href="/page/person.html" class="item">
+            <div class="col">
+                <ion-icon name="person"></ion-icon>
+                <strong>Account</strong>
+            </div>
+        </a>
+    </div>
+
+    <!-- ========= JS Files =========  -->
+    <script src="/assets/js/lib/bootstrap.bundle.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="/assets/js/plugins/splide/splide.min.js"></script>
+    <script src="/assets/js/plugins/apexcharts/apexcharts.min.js"></script>
+    <script src="/assets/js/base.js"></script>
+
+    <script>
+
+        var sparklineAreaExampleSuccess1 = {
+            series: [{
+                data: [555, 1222, 777, 888, 555, 888, 999, 1222]
+            }],
+            chart: {
+                type: 'area',
+                width: '100%',
+                height: 70,
+                sparkline: {
+                    enabled: true
+                }
+            },
+            stroke: {
+                width: 2,
+            },
+            colors: ['#1DCC70'],
+            tooltip: {
+                enabled: false
+            }
+        };
+        var sparklineAreaExampleSuccess2 = {
+            series: [{
+                data: [55, 66, 55, 77, 66, 180, 290, 333]
+            }],
+            chart: {
+                type: 'area',
+                width: '100%',
+                height: 70,
+                sparkline: {
+                    enabled: true
+                }
+            },
+            stroke: {
+                width: 2,
+            },
+            colors: ['#1DCC70'],
+            tooltip: {
+                enabled: false
+            }
+        };
+        var sparklineAreaExampleDanger1 = {
+            series: [{
+                data: [2222, 1666, 1444, 1777, 1333, 1111, 777, 666]
+            }],
+            chart: {
+                type: 'area',
+                width: '100%',
+                height: 70,
+                sparkline: {
+                    enabled: true
+                }
+            },
+            stroke: {
+                width: 2,
+            },
+            colors: ['#FF396F'],
+            tooltip: {
+                enabled: false
+            }
+        };
+        var sparklineAreaExampleDanger2 = {
+            series: [{
+                data: [1200, 1444, 2900, 505, 531, 1900, 555, 75]
+            }],
+            chart: {
+                type: 'area',
+                width: '100%',
+                height: 70,
+                sparkline: {
+                    enabled: true
+                }
+            },
+            stroke: {
+                width: 2,
+            },
+            colors: ['#FF396F'],
+            tooltip: {
+                enabled: false
+            }
+        };
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('.chart-sparkline-success-1').forEach(chart => new ApexCharts(chart, sparklineAreaExampleSuccess1).render());
+            document.querySelectorAll('.chart-sparkline-success-2').forEach(chart => new ApexCharts(chart, sparklineAreaExampleSuccess2).render());
+            document.querySelectorAll('.chart-sparkline-danger-1').forEach(chart => new ApexCharts(chart, sparklineAreaExampleDanger1).render());
+            document.querySelectorAll('.chart-sparkline-danger-2').forEach(chart => new ApexCharts(chart, sparklineAreaExampleDanger2).render());
+
+        })
+
+    </script>
+</body>
+</html>

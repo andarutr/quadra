@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#000000">
+    <title>Admin | Quadra Property Syariah</title>
+    <link rel="icon" type="image/png" href="/assets/img/quadra_07.png" sizes="32x32">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/quadra_07.png">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="manifest" href="__manifest.json">
+    <link href="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.snow.css" rel="stylesheet" />
+    <style>
+        #description {
+            height: 200px; 
+        }
+        #description .ql-editor {
+            height: 160px; 
+        }
+    </style>
+</head>
+
+<body>
+	<div id="loader">
+        <img src="/assets/img/quadra_01.png" width="50" alt="icon">
+    </div>
+
+    <div class="appHeader">
+        <div class="left">
+            <a href="#" class="headerButton goBack">
+                <ion-icon name="call"></ion-icon>
+            </a>
+        </div>
+        <div class="pageTitle">
+            Quadra Property Syariah
+        </div>
+        <div class="right">
+            <a href="#" class="headerButton toggle-searchbox">
+                <ion-icon name="search-outline"></ion-icon>
+            </a>
+        </div>
+    </div>
+
+    <div id="search" class="appHeader">
+        <form class="search-form">
+            <div class="form-group searchbox">
+                <input type="text" class="form-control" placeholder="Search...">
+                <i class="input-icon icon ion-ios-search"></i>
+                <a href="#" class="ms-1 close toggle-searchbox"><i class="icon ion-ios-close-circle"></i></a>
+            </div>
+        </form>
+    </div>
+
+    <div id="appCapsule">
+        <div class="section full gradientSection">
+            <div class="in">
+                <h5 class="title mb-2">/admin/property/create.html</h5>
+                <h1 class="total">Add Property</h1>
+                <h4 class="caption">
+                    11 Nov 2025, 08:32
+                </h4>
+            </div>
+        </div>
+
+        <div class="section-heading padding mt-4">
+            <h2 class="title">Data Property</h2>
+            <a href="/page/admin/property/index.html" class="btn btn-success">Kembali</a>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-group basic">
+                            <div class="input-wrapper">
+                                <label class="label" for="judul">Judul</label>
+                                <input type="text" class="form-control" id="judul" placeholder="Masukkan Judul">
+                            </div>
+                        </div>
+                        <div class="form-group basic">
+                            <div class="input-wrapper">
+                                <label class="label" for="kategori">Kategori</label>
+                                <select class="form-control custom-select" id="kategori">
+                                    <option value="">Pilih</option>
+                                    <option value="Jakarta">Jakarta</option>
+                                    <option value="Bogor">Bogor</option>
+                                    <option value="Depok">Depok</option>
+                                    <option value="Tangerang">Tangerang</option>
+                                    <option value="Bekasi">Bekasi</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group basic">
+                            <div class="input-wrapper">
+                                <label class="label" for="Deskripsi">Deskripsi</label>
+                                <div id="description"></div>
+                            </div>
+                        </div>
+                        <div class="form-group basic">
+                            <div class="input-wrapper">
+                                <label class="label" for="Foto">Foto</label>
+                                <div class="row">
+                                    <div class="col-10">
+                                        <input type="file" class="form-control" id="Foto">
+                                    </div>
+                                    <div class="col-2">
+                                        <button class="btn btn-success">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary form-control"><ion-icon name="checkbox-outline"></ion-icon>POSTING</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="appFooter">
+            <div class="footer-title">
+                Copyright © Quadra 2025. All Rights Reserved.
+            </div>
+        </div>
+    </div>
+
+    <div class="appBottomMenu">
+        <a href="/page/admin/dashboard.html" class="item">
+            <div class="col">
+                <ion-icon name="home"></ion-icon>
+                <strong>Dashboard</strong>
+            </div>
+        </a>
+        <a href="/page/admin/property/index.html" class="item">
+            <div class="col">
+                <ion-icon name="list"></ion-icon>
+                <strong>Property</strong>
+            </div>
+        </a>
+        <a href="/page/person.html" class="item">
+            <div class="col">
+                <ion-icon name="person"></ion-icon>
+                <strong>Account</strong>
+            </div>
+        </a>
+    </div>
+
+    <!-- ========= JS Files =========  -->
+    <script src="/assets/js/lib/bootstrap.bundle.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="/assets/js/plugins/splide/splide.min.js"></script>
+    <script src="/assets/js/plugins/apexcharts/apexcharts.min.js"></script>
+    <script src="/assets/js/base.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.js"></script>
+    <script>
+    const description = new Quill('#description', {
+        theme: 'snow'
+    });
+    </script>
+</body>
+</html>
